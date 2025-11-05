@@ -1,7 +1,7 @@
 # LDS Connector API
 
 
-## Act as a LDS provider 
+## Act as an LDS provider 
 
 We assume that we have already created at the Connector IAM (Keycloak) a user ```all_roles```
 with password ```all_roles```. The user ```all_roles``` is assigned all available roles.
