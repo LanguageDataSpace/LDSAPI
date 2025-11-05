@@ -20,8 +20,10 @@ Then we can list the existing assets and get the number of them.
 $ python getAssets.py
 ```
 
-Let's insert an asset.
+Let's insert an asset. Before that we need to upload the actual data to the built-in local storage.
 
-
+```
+$ bash uploadToEDC3.sh all_roles all_roles ./sample.zip
+```
 
 
