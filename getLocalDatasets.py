@@ -2,14 +2,14 @@ from ldsclient import LDSClient
 
 import json
 
-ldsutils = LDSClient();
+ldsclient = LDSClient();
 
 # list files from local storage
-files = ldsutils.get("/connector3/api/v1/storage/get_local_data");
+files = ldsclient.get("/connector3/api/v1/storage/get_local_data");
 print(files)
 
 # list storages
-storages = ldsutils.get("/connector3/api/v1/storage");
+storages = ldsclient.get("/connector3/api/v1/storage");
 print(storages)
 
 

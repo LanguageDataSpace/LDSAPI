@@ -2,9 +2,9 @@ from ldsclient import LDSClient
 
 import json
 
-ldsutils = LDSClient();
+ldsclient = LDSClient();
 
-assets = ldsutils.get("/connector3/api/v1/assets");
+assets = ldsclient.get("/connector3/api/v1/assets?offset=0&limit=200");
 
 print(assets)
 
