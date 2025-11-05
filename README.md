@@ -26,4 +26,15 @@ Let's insert an asset. Before that we need to upload the actual data to the buil
 $ bash uploadToEDC3.sh all_roles all_roles ./sample.zip
 ```
 
+Lets' check that data were uploaded
+```
+$ python getLocalDatasets.py
+```
+
+Now we are ready to create an asset
+
+```
+$ python createAsset.py
+```
+
 
