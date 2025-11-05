@@ -51,6 +51,10 @@ Get the Connectors of the Data Space
 $ python getConnectors.py
 ```
 
+Get offers from a remote Connector
+```
+$ python getOffersFromARemoteConnector.py
+```
 
 
 
