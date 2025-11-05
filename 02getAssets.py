@@ -1,4 +1,4 @@
-from LDSClient import LDSClient
+from ldsclient import LDSClient
 
 ldsutils = LDSClient();
 

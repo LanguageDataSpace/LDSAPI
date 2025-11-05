@@ -7,13 +7,14 @@ import os
 
 import requests
 
+
 class LDSClient:
 
     def __init__(self):
-        # Load environment variables from .env file
+        # Load environment   variables from .env file
         load_dotenv()  # by default loads from .env in current directory
-        self.address=os.getenv("ADDRESS")
-        self.token=self._load_jwt_from_file( "./token.txt")
+        self.address = os.getenv("ADDRESS")
+        self.token = self._load_jwt_from_file("./token.txt")
 
     @staticmethod
     def _load_jwt_from_file(filepath):
@@ -38,12 +39,4 @@ class LDSClient:
         """Send a GET request."""
         response = requests.get(url, headers=self._get_headers(), params=params)
         response.raise_for_status()
-        return response.json()
-
-
-
-
-
-
-
-
+        return response.text

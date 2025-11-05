@@ -1,0 +1,138 @@
+{
+  "@context": {
+    "edc": "https://w3id.org/edc/v0.0.1/ns/",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcatlds": "http://www.nlpli.gr/dcat-lds#",
+    "dct": "http://purl.org/dc/terms/",
+    "adms": "http://www.w3.org/ns/adms#",
+    "ms": "http://w3id.org/meta-share/meta-share/",
+    "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+    "iana": "http://www.iana.org/assignments/media-types/application/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "omtd": "http://w3id.org/meta-share/omtd-share/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "euvoc_auth": "http://publications.europa.eu/resource/authority/",
+    "schema": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "lds": "https://lds.eu/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dcmitype": "http://purl.org/dc/dcmitype/",
+    "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+    "dpv": "https://w3id.org/dpv#",
+    "it6": "http://data.europa.eu/it6/"
+  },
+  "properties": {
+    "@type": "Asset",
+    "ms:lrType": {
+      "@id": "ms:corpus1"
+    },
+    "adms:identifier": [
+      {
+        "@id": "https://lds.eu/c8b0faa7-ae67-4e66-b86f-b63f12da22b9",
+        "@type": "adms:Identifier",
+        "skos:notation": {
+          "@value": "https://doi.org/10.57771/rnyr-fa06a",
+          "@type": "xsd:string"
+        },
+        "adms:schemaAgency": [
+          {
+            "@value": "Provider name",
+            "@language": "en"
+          }
+        ]
+      }
+    ],
+    "dct:title": [
+      {
+        "@value": "Asset1",
+        "@language": "en"
+      }
+    ],
+    "dct:description": [
+      {
+        "@value": "Asset description",
+        "@language": "en"
+      }
+    ],
+    "dcat:version": "1.0.0",
+    "dcat:keyword": [
+      {
+        "@value": "keyword1",
+        "@language": "en"
+      },
+      {
+        "@value": "keyword2",
+        "@language": "en"
+      },
+      {
+        "@value": "keyword3",
+        "@language": "en"
+      }
+    ],
+    "dcat:distribution": [
+      {
+        "@type": "dcat:Distribution",
+        "ms:size": [
+          {
+            "ms:amount": 4121,
+            "ms:sizeUnit": {
+              "@id": "ms:text1"
+            }
+          }
+        ],
+        "dcat:packageFormat": {
+          "@id": "omtd:Zip"
+        },
+        "dcat:byteSize": 422988,
+        "dcat:mediaType": [
+          {
+            "@id": "https://www.iana.org/assignments/media-types/text/csv"
+          }
+        ],
+        "schema:name": "data.zip"
+      }
+    ],
+    "ms:corpusSubclass": {
+      "@id": "ms:annotatedCorpus"
+    },
+    "ms:sensitiveDataIncluded": {
+      "@id": "ms:noS"
+    },
+    "ms:personalDataIncluded": {
+      "@id": "ms:noP"
+    },
+    "ms:anonymized": {
+      "@id": "ms:noA"
+    },
+    "ms:mediaType": [
+      {
+        "@id": "ms:text"
+      }
+    ],
+    "ms:lingualityType": {
+      "@id": "ms:monolingual"
+    },
+    "ms:language": [
+      {
+        "@type": "ms:Language",
+        "ms:languageCode": {
+          "@id": "http://w3id.org/meta-share/bcp47/language_el"
+        },
+        "ms:languageTag": "el"
+      }
+    ]
+  },
+  "dataAddress": {
+    "type": "HttpData",
+    "@type": "DataAddress",
+    "oauth2:tokenUrl": "https://ldssetupdev.ilsp.gr/auth/realms/LDS3/protocol/openid-connect/token",
+    "oauth2:privateKeyName": "storageKey",
+    "oauth2:clientId": "storageClient",
+    "name": "Asset1",
+    "baseUrl": "https://example.com/data.zip"
+  }
+}
