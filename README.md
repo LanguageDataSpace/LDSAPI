@@ -37,4 +37,9 @@ Now we are ready to create an asset
 $ python createAsset.py
 ```
 
+Let's do a quick check that we have one more asset 
+$ python getAssets.py
+
+
+
 
