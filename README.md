@@ -1,5 +1,7 @@
 # LDS Connector API
 
+This repository contains scripts/examples for interacting with the REST API of the LDS Connector.
+It is split into two parts, the first is for acting as a provider of assets/offers and the second is for consumers.
 
 ## Act as an LDS provider 
 
