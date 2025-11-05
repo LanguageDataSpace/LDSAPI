@@ -32,10 +32,9 @@
     },
     "adms:identifier": [
       {
-        "@id": "https://lds.eu/c8b0faa7-ae67-4e66-b86f-b63f12da22b9",
         "@type": "adms:Identifier",
         "skos:notation": {
-          "@value": "https://doi.org/10.57771/rnyr-fa06a",
+          "@value": "https://doi.org/10.57771/rnyr-fa06c",
           "@type": "xsd:string"
         },
         "adms:schemaAgency": [
@@ -48,13 +47,13 @@
     ],
     "dct:title": [
       {
-        "@value": "Asset1",
+        "@value": "Asset1234",
         "@language": "en"
       }
     ],
     "dct:description": [
       {
-        "@value": "Asset description",
+        "@value": "Asset description 1234",
         "@language": "en"
       }
     ],
@@ -129,10 +128,8 @@
   "dataAddress": {
     "type": "HttpData",
     "@type": "DataAddress",
-    "oauth2:tokenUrl": "https://ldssetupdev.ilsp.gr/auth/realms/LDS3/protocol/openid-connect/token",
-    "oauth2:privateKeyName": "storageKey",
-    "oauth2:clientId": "storageClient",
-    "name": "Asset1",
-    "baseUrl": "https://example.com/data.zip"
+    "name": "Asset1234",
+    "baseUrl": "https://ldssetupdev.ilsp.gr/storage3/hosted/sample.zip",
+	"remote": "false"
   }
 }

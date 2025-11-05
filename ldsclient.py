@@ -23,6 +23,13 @@ class LDSClient:
 
         return token
 
+    @staticmethod
+    def _load_payload_from_file(filepath):
+        with open(filepath, "r") as file:
+            payload = file.read().strip()
+
+        return payload
+
     def _get_headers(self) -> dict:
         """Return default headers with Authorization."""
         return {
@@ -38,5 +45,13 @@ class LDSClient:
         url = f"https://{self.address}{path}"
         """Send a GET request."""
         response = requests.get(url, headers=self._get_headers(), params=params)
+        response.raise_for_status()
+        return response.text
+
+    def post(self, path: str, payloadfile: str, json: dict = None) -> requests.Response:
+        payload = self._load_payload_from_file(payloadfile)
+        """Send a POST request with either JSON or form data."""
+        url = f"https://{self.address}{path}"
+        response = requests.post(url, headers=self._get_headers(), data=payload, json=json)
         response.raise_for_status()
         return response.text
