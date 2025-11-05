@@ -1,7 +1,7 @@
 # LDS Connector API
 
 
-## Provider
+## Act as a LDS provider 
 
 We assume that we have already created at the Connector IAM (Keycloak) a user ```all_roles```
 with password ```all_roles```. The user ```all_roles``` is assigned all available roles.
@@ -43,7 +43,12 @@ $ python getAssets.py
 ```
 
 
-## LDS Consumer
+## Act as an LDS consumer
+
+Let's do a quick check that we have one more asset 
+```
+$ python getConnectors.py
+```
 
 
 
