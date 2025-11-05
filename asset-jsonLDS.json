@@ -123,7 +123,12 @@
         },
         "ms:languageTag": "el"
       }
-    ]
+    ],
+	"dct:format": [
+                    {
+                        "@id": "http://w3id.org/meta-share/omtd-share/Csv"
+                    }
+                ]	
   },
   "dataAddress": {
     "type": "HttpData",
