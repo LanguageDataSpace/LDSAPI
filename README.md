@@ -45,7 +45,8 @@ $ python getAssets.py
 
 ## Act as an LDS consumer
 
-Let's do a quick check that we have one more asset 
+Get the Connectors of the Data Space
+
 ```
 $ python getConnectors.py
 ```
