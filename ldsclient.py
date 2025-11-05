@@ -55,3 +55,10 @@ class LDSClient:
         response = requests.post(url, headers=self._get_headers(), data=payload, json=json)
         response.raise_for_status()
         return response.text
+
+    def post2(self, path: str, payload: dict = None, json: dict = None) -> object:
+        """Send a POST request with either JSON or form data."""
+        url = f"https://{self.address}{path}"
+        response = requests.post(url, headers=self._get_headers(), data=payload, json=json)
+        response.raise_for_status()
+        return response.text
