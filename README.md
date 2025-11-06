@@ -134,6 +134,11 @@ Contract policies
 {"status":"SUCCESS","httpStatus":200,"message":"Search successful. ...}
 ```
 
+```
+$ python getPolicies.py
+```
+
+
 ## Act as an LDS consumer
 
 Get the Connectors of the Data Space
