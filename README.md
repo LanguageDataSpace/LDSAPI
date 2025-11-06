@@ -153,6 +153,14 @@ s://w3id.org/dpv#","it6":"http://data.europa.eu/it6/"},"@type":"IdResponse","@id
 :"1762421698265"}}
 ```
 
+If you search the Connector you will find it
+
+<img width="614" height="447" alt="image" src="https://github.com/user-attachments/assets/f866291f-648a-403b-89ba-3fec9dd2bd40" />
+
+Let's do the same programmatically 
+
+
+
 ## Act as an LDS consumer
 
 Get the Connectors of the Data Space
