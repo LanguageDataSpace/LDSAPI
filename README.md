@@ -102,7 +102,7 @@ Output:
   "data": {
     "@context": {
       "edc": "https://w3id.org/edc/v0.0.1/ns/",
-      "dcat": "h ttp://www.w3.org/ns/dcat#",
+      "dcat": "http://www.w3.org/ns/dcat#",
       "dcatlds": "http://www.nlpli.gr/dcat-lds#",
       "dct": "http://purl.org/dc/terms/",
       "adms": "http://www.w3.org/ns/ adms#",
@@ -128,7 +128,7 @@ Output:
     },
     "@type": "IdResponse",
     "@id": "17597600-83cf-4120-ace1-6b3eb98ee75d",
-    "createdAt": "176242017408 2"
+    "createdAt": "1762420174082"
   }
 }
 
