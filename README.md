@@ -95,16 +95,42 @@ python createAsset.py
 ```
 Output:
 ```
-{"status":"SUCCESS","httpStatus":200,"message":"Asset created","data":{"@context":{"edc":"https://w3id.org/edc/v0.0.1/ns/","dcat":"h
-ttp://www.w3.org/ns/dcat#","dcatlds":"http://www.nlpli.gr/dcat-lds#","dct":"http://purl.org/dc/terms/","adms":"http://www.w3.org/ns/
-adms#","ms":"http://w3id.org/meta-share/meta-share/","loc":"http://id.loc.gov/vocabulary/iso639-1/","iana":"http://www.iana.org/assi
-gnments/media-types/application/","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","rdfs":"http://www.w3.org/2000/01/rdf-schema#"
-,"foaf":"http://xmlns.com/foaf/0.1/","@vocab":"https://w3id.org/edc/v0.0.1/ns/","odrl":"http://www.w3.org/ns/odrl/2/","omtd":"http:/
-/w3id.org/meta-share/omtd-share/","xsd":"http://www.w3.org/2001/XMLSchema#","euvoc_auth":"http://publications.europa.eu/resource/aut
-hority/","schema":"https://schema.org/","owl":"http://www.w3.org/2002/07/owl#","lds":"https://lds.eu/","skos":"http://www.w3.org/200
-4/02/skos/core#","dcmitype":"http://purl.org/dc/dcmitype/","lexmeta":"http://w3id.org/meta-share/lexmeta#","dpv":"https://w3id.org/d
-pv#","it6":"http://data.europa.eu/it6/"},"@type":"IdResponse","@id":"17597600-83cf-4120-ace1-6b3eb98ee75d","createdAt":"176242017408
-2"}}
+{
+  "status": "SUCCESS",
+  "httpStatus": 200,
+  "message": "Asset created",
+  "data": {
+    "@context": {
+      "edc": "https://w3id.org/edc/v0.0.1/ns/",
+      "dcat": "h ttp://www.w3.org/ns/dcat#",
+      "dcatlds": "http://www.nlpli.gr/dcat-lds#",
+      "dct": "http://purl.org/dc/terms/",
+      "adms": "http://www.w3.org/ns/ adms#",
+      "ms": "http://w3id.org/meta-share/meta-share/",
+      "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+      "iana": "http://www.iana.org/assi gnments/media-types/application/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+      "odrl": "http://www.w3.org/ns/odrl/2/",
+      "omtd": "http:/ /w3id.org/meta-share/omtd-share/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "euvoc_auth": "http://publications.europa.eu/resource/aut hority/",
+      "schema": "https://schema.org/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "lds": "https://lds.eu/",
+      "skos": "http://www.w3.org/200 4/02/skos/core#",
+      "dcmitype": "http://purl.org/dc/dcmitype/",
+      "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+      "dpv": "https://w3id.org/d pv#",
+      "it6": "http://data.europa.eu/it6/"
+    },
+    "@type": "IdResponse",
+    "@id": "17597600-83cf-4120-ace1-6b3eb98ee75d",
+    "createdAt": "176242017408 2"
+  }
+}
 
 ```
 
