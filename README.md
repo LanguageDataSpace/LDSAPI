@@ -15,7 +15,7 @@ We have to log-in (programmatically via the Keycloak REST) and acquire an access
 We can do that by running the following script that saves the access token (token.txt).
 
 ```
-$ bash getAccessToken.sh all_roles all_roles
+bash getAccessToken.sh all_roles all_roles
 ```
 
 Output:
@@ -36,7 +36,7 @@ curl --location --request POST 'https://ldssetupdev.ilsp.gr/auth/realms/LDS3/pro
 Then we can list the existing assets and get the number of them.
 
 ```
-$ python getAssets.py
+python getAssets.py
 ```
 Output:
 
@@ -51,7 +51,7 @@ number of assets:69
 Let's insert an asset. Before that we need to upload the actual data to the built-in local storage.
 
 ```
-$ bash uploadToEDC3.sh all_roles all_roles ./sample.zip
+bash uploadToEDC3.sh all_roles all_roles ./sample.zip
 ```
 
 Output:
@@ -77,7 +77,7 @@ Output:
 
 Lets' check that data were uploaded
 ```
-$ python getLocalDatasets.py
+python getLocalDatasets.py
 ```
 
 Output:
@@ -91,7 +91,7 @@ Output:
 Now we are ready to create an asset. Keep the asset id it will be needed when we will create an offer.
 
 ```
-$ python createAsset.py
+python createAsset.py
 ```
 Output:
 ```
@@ -112,7 +112,7 @@ pv#","it6":"http://data.europa.eu/it6/"},"@type":"IdResponse","@id":"17597600-83
 
 Let's do a quick check that we have one more asset 
 ```
-$ python getAssets.py
+python getAssets.py
 ```
 Output
 ```
@@ -122,7 +122,7 @@ Output
 **List publication and contract policies** 
 
 ```
-$ python getPolicies.py
+python getPolicies.py
 ```
 Output
 
@@ -137,7 +137,7 @@ Contract policies
 **Create offer** 
 
 ```
-$ python createOffer.py
+python createOffer.py
 ```
 
 Output:
@@ -164,7 +164,7 @@ Let's do the same programmatically
 **Retrieve offer** 
 
 ```
-$ python getOffer.py
+python getOffer.py
 ```
 
 Output:
@@ -178,12 +178,12 @@ Output:
 Get the Connectors of the Data Space
 
 ```
-$ python getConnectors.py
+python getConnectors.py
 ```
 
 Get offers from a remote Connector
 ```
-$ python getOffersFromARemoteConnector.py
+python getOffersFromARemoteConnector.py
 ```
 
 
