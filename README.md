@@ -400,8 +400,7 @@ Output:
 
 ## Act as an LDS consumer
 
-Get the Connectors of the Data Space
-
+**Get the Connectors of the Data Space**
 ```
 python getConnectors.py
 ```
@@ -450,8 +449,7 @@ Output:
 }
 ```
 
-Get offers from a remote Connector
-
+**Get offers from a remote Connector**
 ```
 python getOffersFromARemoteConnector.py
 ```
