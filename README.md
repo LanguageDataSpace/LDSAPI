@@ -138,6 +138,20 @@ Contract policies
 $ python createOffer.py
 ```
 
+```
+Output:
+
+{"status":"SUCCESS","httpStatus":200,"message":"Contract definition created","data":{"@context":{"edc":"https://w3id.org/edc/v0.0.1/
+ns/","dcat":"http://www.w3.org/ns/dcat#","dcatlds":"http://www.nlpli.gr/dcat-lds#","dct":"http://purl.org/dc/terms/","adms":"http://
+www.w3.org/ns/adms#","ms":"http://w3id.org/meta-share/meta-share/","loc":"http://id.loc.gov/vocabulary/iso639-1/","iana":"http://www
+.iana.org/assignments/media-types/application/","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","rdfs":"http://www.w3.org/2000/0
+1/rdf-schema#","foaf":"http://xmlns.com/foaf/0.1/","@vocab":"https://w3id.org/edc/v0.0.1/ns/","odrl":"http://www.w3.org/ns/odrl/2/",
+"omtd":"http://w3id.org/meta-share/omtd-share/","xsd":"http://www.w3.org/2001/XMLSchema#","euvoc_auth":"http://publications.europa.e
+u/resource/authority/","schema":"https://schema.org/","owl":"http://www.w3.org/2002/07/owl#","lds":"https://lds.eu/","skos":"http://
+www.w3.org/2004/02/skos/core#","dcmitype":"http://purl.org/dc/dcmitype/","lexmeta":"http://w3id.org/meta-share/lexmeta#","dpv":"http
+s://w3id.org/dpv#","it6":"http://data.europa.eu/it6/"},"@type":"IdResponse","@id":"48841f36-d95b-43ef-b65f-ad46ffbec21c","createdAt"
+:"1762421698265"}}
+```
 
 ## Act as an LDS consumer
 
