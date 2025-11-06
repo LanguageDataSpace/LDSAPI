@@ -38,6 +38,13 @@ Then we can list the existing assets and get the number of them.
 ```
 $ python getAssets.py
 ```
+Output:
+
+```
+{"status":"SUCCESS","httpStatus":200,"message":"Assets found.
+....}
+number of assets:69
+```
 
 **Upload asset actual data** 
 
