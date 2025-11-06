@@ -119,6 +119,8 @@ Output
 ...
 ```
 
+**List publication and contract policies** 
+
 
 ## Act as an LDS consumer
 
