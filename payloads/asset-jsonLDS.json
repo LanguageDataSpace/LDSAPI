@@ -34,7 +34,7 @@
             {
                 "@type": "adms:Identifier",
                 "skos:notation": {
-                    "@value": "https://doi.org/10.57771/rnyr-fa06f",
+                    "@value": "https://doi.org/10.57771/rnyr-fa06g",
                     "@type": "xsd:string"
                 },
                 "adms:schemaAgency": [
@@ -47,7 +47,7 @@
         ],
         "dct:title": [
             {
-                "@value": "Asset1234566",
+                "@value": "Asset1234567",
                 "@language": "en"
             }
         ],

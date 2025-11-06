@@ -1,0 +1,15 @@
+{
+    "@context": {
+        "edc": "https://w3id.org/edc/v0.0.1/ns/",
+        "@vocab": "https://w3id.org/edc/v0.0.1/ns/"
+    },
+    "accessPolicyId": "43285c5e-d0a2-4c8b-ac97-c1bd5aa8b857",
+    "contractPolicyId": "14a7aa38-931a-47c4-b838-5f5e78abf104",
+    "assetsSelector": [
+        {
+            "operandLeft":"https://w3id.org/edc/v0.0.1/ns/id",
+            "operator":"=",
+            "operandRight":"17597600-83cf-4120-ace1-6b3eb98ee75d"
+        }
+    ]
+}
