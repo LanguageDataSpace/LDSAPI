@@ -4,7 +4,7 @@ import json
 
 ldsclient = LDSClient();
 
-remoteOffers = ldsclient.post("/connector3/api/v1/retrieve_catalogs/?page=1&size=25&sortField=name&sortOrder=asc"
+remoteOffers = ldsclient.post("/connector3/api/v1/retrieve_catalogs/?page=1&size=1&sortField=name&sortOrder=asc"
                                "&merge=true", "./catalogs.json")
 print(remoteOffers)
 
