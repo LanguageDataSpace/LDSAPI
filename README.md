@@ -1336,6 +1336,10 @@ Output:
 }
 ```
 
+**Negotiate an offer**
 
+```
+python startNegotation.py
+```
 
 
