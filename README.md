@@ -134,6 +134,8 @@ Contract policies
 {"status":"SUCCESS","httpStatus":200,"message":"Search successful. ...}
 ```
 
+**Create offer** 
+
 ```
 $ python createOffer.py
 ```
