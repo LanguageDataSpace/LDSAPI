@@ -138,9 +138,9 @@ Contract policies
 $ python createOffer.py
 ```
 
-```
 Output:
 
+```
 {"status":"SUCCESS","httpStatus":200,"message":"Contract definition created","data":{"@context":{"edc":"https://w3id.org/edc/v0.0.1/
 ns/","dcat":"http://www.w3.org/ns/dcat#","dcatlds":"http://www.nlpli.gr/dcat-lds#","dct":"http://purl.org/dc/terms/","adms":"http://
 www.w3.org/ns/adms#","ms":"http://w3id.org/meta-share/meta-share/","loc":"http://id.loc.gov/vocabulary/iso639-1/","iana":"http://www
