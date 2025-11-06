@@ -2,9 +2,9 @@ from ldsclient import LDSClient
 
 import json
 
-ldsutils = LDSClient();
+ldsclient = LDSClient();
 
-asset = ldsutils.post("/connector3/api/v1/assets", "./asset-jsonLDS.json");
+asset = ldsclient.post("/connector3/api/v1/assets", "./payloads/asset-jsonLDS.json");
 
 print(asset)
 
