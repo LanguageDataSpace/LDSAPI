@@ -424,7 +424,7 @@ Output:
       "participant": "galanis AI"
     },
     {
-      "con nectors": [
+      "connectors": [
         {
           "id": 2,
           "name": "Company B",
