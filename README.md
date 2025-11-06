@@ -143,16 +143,42 @@ python createOffer.py
 Output:
 
 ```
-{"status":"SUCCESS","httpStatus":200,"message":"Contract definition created","data":{"@context":{"edc":"https://w3id.org/edc/v0.0.1/
-ns/","dcat":"http://www.w3.org/ns/dcat#","dcatlds":"http://www.nlpli.gr/dcat-lds#","dct":"http://purl.org/dc/terms/","adms":"http://
-www.w3.org/ns/adms#","ms":"http://w3id.org/meta-share/meta-share/","loc":"http://id.loc.gov/vocabulary/iso639-1/","iana":"http://www
-.iana.org/assignments/media-types/application/","rdf":"http://www.w3.org/1999/02/22-rdf-syntax-ns#","rdfs":"http://www.w3.org/2000/0
-1/rdf-schema#","foaf":"http://xmlns.com/foaf/0.1/","@vocab":"https://w3id.org/edc/v0.0.1/ns/","odrl":"http://www.w3.org/ns/odrl/2/",
-"omtd":"http://w3id.org/meta-share/omtd-share/","xsd":"http://www.w3.org/2001/XMLSchema#","euvoc_auth":"http://publications.europa.e
-u/resource/authority/","schema":"https://schema.org/","owl":"http://www.w3.org/2002/07/owl#","lds":"https://lds.eu/","skos":"http://
-www.w3.org/2004/02/skos/core#","dcmitype":"http://purl.org/dc/dcmitype/","lexmeta":"http://w3id.org/meta-share/lexmeta#","dpv":"http
-s://w3id.org/dpv#","it6":"http://data.europa.eu/it6/"},"@type":"IdResponse","@id":"48841f36-d95b-43ef-b65f-ad46ffbec21c","createdAt"
-:"1762421698265"}}
+{
+  "status": "SUCCESS",
+  "httpStatus": 200,
+  "message": "Contract definition created",
+  "data": {
+    "@context": {
+      "edc": "https://w3id.org/edc/v0.0.1/ ns/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "dcatlds": "http://www.nlpli.gr/dcat-lds#",
+      "dct": "http://purl.org/dc/terms/",
+      "adms": "http:// www.w3.org/ns/adms#",
+      "ms": "http://w3id.org/meta-share/meta-share/",
+      "loc": "http://id.loc.gov/vocabulary/iso639-1/",
+      "iana": "http://www .iana.org/assignments/media-types/application/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/0 1/rdf-schema#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "@vocab": "https://w3id.org/edc/v0.0.1/ns/",
+      "odrl": "http://www.w3.org/ns/odrl/2/",
+      "omtd": "http://w3id.org/meta-share/omtd-share/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "euvoc_auth": "http://publications.europa.e u/resource/authority/",
+      "schema": "https://schema.org/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "lds": "https://lds.eu/",
+      "skos": "http:// www.w3.org/2004/02/skos/core#",
+      "dcmitype": "http://purl.org/dc/dcmitype/",
+      "lexmeta": "http://w3id.org/meta-share/lexmeta#",
+      "dpv": "http s://w3id.org/dpv#",
+      "it6": "http://data.europa.eu/it6/"
+    },
+    "@type": "IdResponse",
+    "@id": "48841f36-d95b-43ef-b65f-ad46ffbec21c",
+    "createdAt": "1762421698265"
+  }
+}
 ```
 
 If you search the Connector you will find it
@@ -170,7 +196,180 @@ python getOffer.py
 Output:
 
 ```
-"status":"SUCCESS","httpStatus":200,"message":"Offer doc found.","data":{"id":"48841f36-d95b-43ef-b65f-ad46ffbec21c","accessPolicyId":"43285c5e-d0a2-4c8b-ac97-c1bd5aa8b857","contractPolicyId":"14a7aa38-931a-47c4-b838-5f5e78abf104","accessPolicyTitle":"No Restriction","contractPolicyTitle":"Apache License, Version 2.0","contractPolicyDescription":"Apache License\nVersion 2.0, January 2004\nhttp://www.apache.org/licenses/\n\nTERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n1. ....... License.\n","contractPolicyLegalcode":"http://www.apache.org/licenses/LICENSE-2.0","assetId":"17597600-83cf-4120-ace1-6b3eb98ee75d","name":[{"value":"Asset1234567","language":"en"}],"description":[{"value":"Asset description 1234","language":"en"}],"policy":{"odrl:prohibition":{"odrl:action":{"@id":"https://dalicc.net/ns#promote"}},"odrl:obligation":[],"@id":"NDg4NDFmMzYtZDk1Yi00M2VmLWI2NWYtYWQ0NmZmYmVjMjFj:MTc1OTc2MDAtODNjZi00MTIwLWFjZTEtNmIzZWI5OGVlNzVk:MTljZTNkODYtMTk4NC00ZTk3LWExYzMtNjk5OWY2NGMxZWQ2","odrl:permission":[{"odrl:action":{"@id":"odrl:display"}},{"odrl:action":{"@id":"https://dalicc.net/ns#ChangeLicense"},"odrl:duty":{"odrl:action":{"@id":"https://dalicc.net/ns#compliantLicense"}}},{"odrl:action":{"@id":"odrl:present"}},{"odrl:action":{"@id":"odrl:reproduce"}},{"odrl:action":{"@id":"http://creativecommons.org/ns#CommercialUse"}},{"odrl:action":{"@id":"http://creativecommons.org/ns#DerivativeWorks"}},{"odrl:action":{"@id":"https://dalicc.net/ns#ModifiedWorks"}},{"odrl:action":{"@id":"https://dalicc.net/ns#chargeDistributionFee"}},{"odrl:action":{"@id":"odrl:distribute"},"odrl:duty":[{"odrl:action":{"@id":"http://creativecommons.org/ns#Attribution"}},{"odrl:action":{"@id":"http://creativecommons.org/ns#Notice"}}]},{"odrl:action":{"@id":"odrl:modify"},"odrl:duty":[{"odrl:action":{"@id":"http://creativecommons.org/ns#Attribution"}},{"odrl:action":{"@id":"https://dalicc.net/ns#modificationNotice"}}]},{"odrl:action":{"@id":"odrl:derive"},"odrl:duty":[{"odrl:action":{"@id":"https://dalicc.net/ns#modificationNotice"}},{"odrl:action":{"@id":"http://creativecommons.org/ns#Attribution"}}]}],"@type":"odrl:Offer"},"lrType":"Corpus","mediaType":["Text"],"modelFunction":null,"keyword":[{"value":"keyword1","language":"en"},{"value":"keyword2","language":"en"},{"value":"keyword3","language":"en"}],"msLanguage":[{"languageCode":{"@id":"http://w3id.org/meta-share/bcp47/language_el"},"languageTag":"el"}],"dctLanguage":["Greek"],"open":true,"createdAt":"1762421698265","deletedAt":null,"deleted":false,"payAmount":0.0,"sourceConnector":"Company C","published":true}}
+{
+"status": "SUCCESS",
+"httpStatus": 200,
+"message": "Offer doc found.",
+"data": {
+  "id": "48841f36-d95b-43ef-b65f-ad46ffbec21c",
+  "accessPolicyId": "43285c5e-d0a2-4c8b-ac97-c1bd5aa8b857",
+  "contractPolicyId": "14a7aa38-931a-47c4-b838-5f5e78abf104",
+  "accessPolicyTitle": "No Restriction",
+  "contractPolicyTitle": "Apache License, Version 2.0",
+  "contractPolicyDescription": "Apache License\nVersion 2.0, January 2004\nhttp://www.apache.org/licenses/\n\nTERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n1. ....... License.\n",
+  "contractPolicyLegalcode": "http://www.apache.org/licenses/LICENSE-2.0",
+  "assetId": "17597600-83cf-4120-ace1-6b3eb98ee75d",
+  "name": [
+    {
+      "value": "Asset1234567",
+      "language": "en"
+    }
+  ],
+  "description": [
+    {
+      "value": "Asset description 1234",
+      "language": "en"
+    }
+  ],
+  "policy": {
+    "odrl:prohibition": {
+      "odrl:action": {
+        "@id": "https://dalicc.net/ns#promote"
+      }
+    },
+    "odrl:obligation": [
+      
+    ],
+    "@id": "NDg4NDFmMzYtZDk1Yi00M2VmLWI2NWYtYWQ0NmZmYmVjMjFj:MTc1OTc2MDAtODNjZi00MTIwLWFjZTEtNmIzZWI5OGVlNzVk:MTljZTNkODYtMTk4NC00ZTk3LWExYzMtNjk5OWY2NGMxZWQ2",
+    "odrl:permission": [
+      {
+        "odrl:action": {
+          "@id": "odrl:display"
+        }
+      },
+      {
+        "odrl:action": {
+          "@id": "https://dalicc.net/ns#ChangeLicense"
+        },
+        "odrl:duty": {
+          "odrl:action": {
+            "@id": "https://dalicc.net/ns#compliantLicense"
+          }
+        }
+      },
+      {
+        "odrl:action": {
+          "@id": "odrl:present"
+        }
+      },
+      {
+        "odrl:action": {
+          "@id": "odrl:reproduce"
+        }
+      },
+      {
+        "odrl:action": {
+          "@id": "http://creativecommons.org/ns#CommercialUse"
+        }
+      },
+      {
+        "odrl:action": {
+          "@id": "http://creativecommons.org/ns#DerivativeWorks"
+        }
+      },
+      {
+        "odrl:action": {
+          "@id": "https://dalicc.net/ns#ModifiedWorks"
+        }
+      },
+      {
+        "odrl:action": {
+          "@id": "https://dalicc.net/ns#chargeDistributionFee"
+        }
+      },
+      {
+        "odrl:action": {
+          "@id": "odrl:distribute"
+        },
+        "odrl:duty": [
+          {
+            "odrl:action": {
+              "@id": "http://creativecommons.org/ns#Attribution"
+            }
+          },
+          {
+            "odrl:action": {
+              "@id": "http://creativecommons.org/ns#Notice"
+            }
+          }
+        ]
+      },
+      {
+        "odrl:action": {
+          "@id": "odrl:modify"
+        },
+        "odrl:duty": [
+          {
+            "odrl:action": {
+              "@id": "http://creativecommons.org/ns#Attribution"
+            }
+          },
+          {
+            "odrl:action": {
+              "@id": "https://dalicc.net/ns#modificationNotice"
+            }
+          }
+        ]
+      },
+      {
+        "odrl:action": {
+          "@id": "odrl:derive"
+        },
+        "odrl:duty": [
+          {
+            "odrl:action": {
+              "@id": "https://dalicc.net/ns#modificationNotice"
+            }
+          },
+          {
+            "odrl:action": {
+              "@id": "http://creativecommons.org/ns#Attribution"
+            }
+          }
+        ]
+      }
+    ],
+    "@type": "odrl:Offer"
+  },
+  "lrType": "Corpus",
+  "mediaType": [
+    "Text"
+  ],
+  "modelFunction": null,
+  "keyword": [
+    {
+      "value": "keyword1",
+      "language": "en"
+    },
+    {
+      "value": "keyword2",
+      "language": "en"
+    },
+    {
+      "value": "keyword3",
+      "language": "en"
+    }
+  ],
+  "msLanguage": [
+    {
+      "languageCode": {
+        "@id": "http://w3id.org/meta-share/bcp47/language_el"
+      },
+      "languageTag": "el"
+    }
+  ],
+  "dctLanguage": [
+    "Greek"
+  ],
+  "open": true,
+  "createdAt": "1762421698265",
+  "deletedAt": null,
+  "deleted": false,
+  "payAmount": 0.0,
+  "sourceConnector": "Company C",
+  "published": true
+}
+}
 ```
 
 ## Act as an LDS consumer
