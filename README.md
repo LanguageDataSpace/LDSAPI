@@ -135,7 +135,7 @@ Contract policies
 ```
 
 ```
-$ python getPolicies.py
+$ python createOffer.py
 ```
 
 
