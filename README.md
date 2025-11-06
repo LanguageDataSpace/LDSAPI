@@ -33,7 +33,7 @@ Lets' check that data were uploaded
 $ python getLocalDatasets.py
 ```
 
-Now we are ready to create an asset
+Now we are ready to create an asset. Keep the asset id it will be needed when we will create an offer.
 
 ```
 $ python createAsset.py
