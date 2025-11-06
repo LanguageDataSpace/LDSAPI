@@ -181,7 +181,17 @@ Get the Connectors of the Data Space
 python getConnectors.py
 ```
 
+Output:
+```
+{"status":"SUCCESS","httpStatus":200,"message":"Participants found","data":[{"connectors":[{"id":38,"name":"astros ai dev","kc_id":"
+e2bee991-7c43-4172-8cf7-725827ad6d1b","url":"https://snf-76746.ok-kno.grnetcloud.net/connector1"}],"participant":"galanis AI"},{"con
+nectors":[{"id":2,"name":"Company B","kc_id":"ed59216f-2989-495e-915d-e7ad51e93b16","url":"https://ldssetupdev.ilsp.gr/connector2"}]
+,"participant":"Company B"},{"connectors":[{"id":1,"name":"Company A","kc_id":"9971988c-7f0c-41ce-8a3b-1625f4c13749","url":"https://
+ldssetupdev.ilsp.gr/connector1"}],"participant":"Company A"}]}
+```
+
 Get offers from a remote Connector
+
 ```
 python getOffersFromARemoteConnector.py
 ```
