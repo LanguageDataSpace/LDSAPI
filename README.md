@@ -1342,4 +1342,9 @@ Output:
 python startNegotation.py
 ```
 
+Output:
+```
+{"status":"FAILURE","httpStatus":302,"message":"This dataset has already been successfully negotiated for."}
+
+```
 
