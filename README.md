@@ -121,6 +121,18 @@ Output
 
 **List publication and contract policies** 
 
+```
+$ python getPolicies.py
+```
+Output
+
+```
+Access/Publication policies
+{"status":"SUCCESS","httpStatus":200,"message":"Search successful. ...}
+...
+Contract policies
+{"status":"SUCCESS","httpStatus":200,"message":"Search successful. ...}
+```
 
 ## Act as an LDS consumer
 
