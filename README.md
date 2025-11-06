@@ -54,11 +54,35 @@ Let's insert an asset. Before that we need to upload the actual data to the buil
 $ bash uploadToEDC3.sh all_roles all_roles ./sample.zip
 ```
 
+Output:
+```
+...
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Server: nginx/1.27.3
+< Date: Thu, 06 Nov 2025 09:02:34 GMT
+< Transfer-Encoding: chunked
+< Connection: keep-alive
+< x-amz-request-id: 4442587FB7D0A2F9
+< ETag: "640357854d0ec6606457d9346552d3d7"
+< Cache-Control: no-store, no-cache
+<
+{ [5 bytes data]
+100   160    0     0  100   160      0    220 --:--:-- --:--:-- --:--:--   220
+* Connection #0 to host ldssetupdev.ilsp.gr left intact
+
+```
+
 **Check that it was uploaded** 
 
 Lets' check that data were uploaded
 ```
 $ python getLocalDatasets.py
+```
+
+Output:
+```
+{"status":"SUCCESS","httpStatus":200,"message":"File list returned.","data":["oagl.zip","sampledata.zip","sample.zip"]}
 ```
 
 **Create an asset** 
