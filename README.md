@@ -1,7 +1,7 @@
 # LDS Connector API
 
 This repository contains scripts/examples for interacting with the REST API of the LDS Connector.
-It is split into two parts, the first is for acting as a provider of assets/offers and the second is for consumers.
+It is split into two parts, the first is for providing assets/offers and the second is for consumers.
 
 ## Act as an LDS provider 
 
@@ -400,8 +400,7 @@ Output:
 
 ## Act as an LDS consumer
 
-Get the Connectors of the Data Space
-
+**Get the Connectors of the Data Space**
 ```
 python getConnectors.py
 ```
@@ -425,7 +424,7 @@ Output:
       "participant": "galanis AI"
     },
     {
-      "con nectors": [
+      "connectors": [
         {
           "id": 2,
           "name": "Company B",
@@ -450,8 +449,7 @@ Output:
 }
 ```
 
-Get offers from a remote Connector
-
+**Get offers from a remote Connector**
 ```
 python getOffersFromARemoteConnector.py
 ```
@@ -1342,4 +1340,9 @@ Output:
 python startNegotation.py
 ```
 
+Output:
+```
+{"status":"FAILURE","httpStatus":302,"message":"This dataset has already been successfully negotiated for."}
+
+```
 
