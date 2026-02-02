@@ -15,6 +15,7 @@ class LDSClient:
         load_dotenv()  # by default loads from .env in current directory
         self.address = os.getenv("ADDRESS")
         self.token = self._load_jwt_from_file("./token.txt")
+        self.backendsubpath = os.getenv("backendsubpath")
 
     @staticmethod
     def _load_jwt_from_file(filepath):
@@ -42,14 +43,14 @@ class LDSClient:
             "Authorization": f"Bearer {self.token}"
         }
 
-        url = f"https://{self.address}{path}"
+        url = f"https://{self.address}{self.backendsubpath}{path}"
         """Send a GET request."""
         response = requests.get(url, headers=self._get_headers(), params=params)
         response.raise_for_status()
         return response.text
 
     def post(self, path: str, payloadfile: str, json: dict = None) -> requests.Response:
-        payload = self._load_payload_from_file(payloadfile)
+        url = f"https://{self.address}{self.backendsubpath}{path}"
         """Send a POST request with either JSON or form data."""
         url = f"https://{self.address}{path}"
         response = requests.post(url, headers=self._get_headers(), data=payload)

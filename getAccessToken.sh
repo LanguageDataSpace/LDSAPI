@@ -10,7 +10,7 @@ echo "username:"$username
 echo "password:"$password
 echo "instance:"$instance
 
-cmd="curl --location --request POST 'https://${ADDRESS}/auth/realms/${instance}/protocol/openid-connect/token' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'client_id=${client}' --data-urlencode 'grant_type=password' --data-urlencode 'username=$username' --data-urlencode 'password=$password'"
+cmd="curl --location --request POST 'https://${ADDRESS}/auth/realms/${realm}/protocol/openid-connect/token' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'client_id=${client}' --data-urlencode 'grant_type=password' --data-urlencode 'username=$username' --data-urlencode 'password=$password'"
 
 echo $cmd
 RESULT=`eval $cmd`

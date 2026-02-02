@@ -4,7 +4,7 @@ import json
 
 ldsclient = LDSClient();
 
-assets = ldsclient.get("/connector3/api/v1/assets?offset=0&limit=200");
+assets = ldsclient.get("/api/v1/assets?offset=0&limit=200");
 
 print(assets)
 
