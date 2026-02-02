@@ -24,8 +24,8 @@ Output:
 ```
 username:all_roles
 password:all_roles
-instance:LDS3
-curl --location --request POST 'https://ldssetupdev.ilsp.gr/auth/realms/LDS3/protocol/openid-connect/token' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'client_id=connector-3-ui' --data-urlencode 'grant_type=password' --data-urlencode 'username=all_roles' --data-urlencode 'password=all_roles'
+instance:LDS1
+curl --location --request POST 'https://ldssetupdev.ilsp.gr/auth/realms/LDS1/protocol/openid-connect/token' --header 'Content-Type: application/x-www-form-urlencoded' --data-urlencode 'client_id=connector-3-ui' --data-urlencode 'grant_type=password' --data-urlencode 'username=all_roles' --data-urlencode 'password=all_roles'
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  2858  100  2776  100    82   4939    145 --:--:-- --:--:-- --:--:--  5085
@@ -53,7 +53,7 @@ number of assets:69
 Let's insert an asset. Before that we need to upload the actual data to the built-in local storage.
 
 ```
-bash uploadToEDC3.sh all_roles all_roles ./sample.zip
+bash uploadToEDC1.sh all_roles all_roles ./sample.zip
 ```
 
 Output:
