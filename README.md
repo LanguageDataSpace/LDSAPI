@@ -3,6 +3,8 @@
 This repository contains scripts/examples for interacting with the REST API of the LDS Connector.
 It is split into two parts, the first is for providing assets/offers and the second is for consumers.
 
+Before starting edit .env and set the ADDRESS value; i.e., the DNS name of the VM that hosts the Connector.
+
 ## Act as an LDS provider 
 
 We assume that we have already created at the Connector IAM (Keycloak) a user ```all_roles```
